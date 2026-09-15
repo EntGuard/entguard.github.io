@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://entguard.github.io/sitemap.xml

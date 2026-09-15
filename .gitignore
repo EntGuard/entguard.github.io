@@ -1,0 +1,9 @@
+# Claude Code local tooling — not part of the deployed site
+.claude/
+
+# Unrelated scratch file — not part of this site
+pantheon-homepage-redesign.html
+
+# OS cruft
+.DS_Store
+Thumbs.db
