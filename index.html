@@ -11,12 +11,10 @@
   <meta name="theme-color" content="#025da1">
   <link rel="canonical" href="https://entguard.github.io/">
 
-  <!-- Icons -->
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Open Graph (Facebook, LinkedIn, Slack, ...) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EntGuard">
   <meta property="og:title" content="EntGuard: Enterprise-Grade Open-Source VPN">
@@ -28,13 +26,11 @@
   <meta property="og:image:alt" content="EntGuard: the enterprise-grade VPN, built for the cloud">
   <meta property="og:locale" content="en_US">
 
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="EntGuard: Enterprise-Grade Open-Source VPN">
   <meta name="twitter:description" content="A centrally orchestrated VPN built on WireGuard®. Open source under Apache 2.0, self-hosted, with LDAP, MFA, and an optional high-performance VPP data plane.">
   <meta name="twitter:image" content="https://entguard.github.io/og-image.png">
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,7 +86,6 @@
     .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
     a { color: var(--brand); text-decoration: none; }
 
-    /* ---------- Nav ---------- */
     header {
       position: sticky; top: 0; z-index: 50;
       background: rgba(255, 255, 255, 0.92);
@@ -121,7 +116,6 @@
     .btn-nav { padding: 8px 18px; }
     @media (max-width: 720px) { .nav-links a:not(.btn) { display: none; } }
 
-    /* ---------- Hero ---------- */
     .hero {
       background:
         radial-gradient(1000px 500px at 80% -10%, rgba(78, 142, 189, 0.35), transparent 60%),
@@ -154,7 +148,6 @@
       .hero { padding: 64px 0 72px; }
     }
 
-    /* ---------- Sections ---------- */
     section { padding: 88px 0; }
     .section-alt { background: var(--brand-lighter); }
     .kicker {
@@ -164,7 +157,6 @@
     h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 700; margin-bottom: 14px; line-height: 1.2; }
     .section-intro { color: var(--ink-soft); max-width: 46em; margin-bottom: 48px; font-size: 1.05rem; }
 
-    /* ---------- Feature cards ---------- */
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
     @media (max-width: 960px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 620px) { .grid-3 { grid-template-columns: 1fr; } }
@@ -183,8 +175,9 @@
     .card-icon svg { width: 22px; height: 22px; }
     .card h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 8px; }
     .card p { color: var(--ink-soft); font-size: 0.94rem; }
+    .card-note { margin-top: 10px; font-size: 0.78rem; color: var(--brand-grey); }
+    .card-note a { color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
 
-    /* ---------- Architecture ---------- */
     .arch-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
     @media (max-width: 960px) { .arch-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 560px) { .arch-grid { grid-template-columns: 1fr; } }
@@ -203,7 +196,6 @@
     .arch-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
     .arch-card p { font-size: 0.87rem; color: var(--ink-soft); }
 
-    /* ---------- Use cases ---------- */
     .usecase { display: flex; gap: 18px; align-items: flex-start; }
     .usecase-num {
       flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
@@ -216,7 +208,6 @@
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 44px; }
     @media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
 
-    /* ---------- Tech strip ---------- */
     .tech-strip {
       display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px;
     }
@@ -229,7 +220,6 @@
     }
     a.chip:hover { border-color: var(--brand); color: var(--brand); }
 
-    /* ---------- Open source ---------- */
     .oss {
       background: linear-gradient(160deg, var(--brand-darker), var(--brand-dark));
       color: var(--white); border-radius: 20px;
@@ -251,7 +241,6 @@
     .oss-cta { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
     @media (max-width: 800px) { .oss-cta { align-items: stretch; } }
 
-    /* ---------- Footer ---------- */
     footer {
       border-top: 1px solid var(--line);
       padding: 40px 0;
@@ -268,7 +257,6 @@
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
   <header>
     <div class="wrap nav">
       <a href="#" class="nav-logo" aria-label="EntGuard home">
@@ -289,7 +277,6 @@
     </div>
   </header>
 
-  <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
@@ -325,7 +312,6 @@
     </div>
   </section>
 
-  <!-- ============ FEATURES ============ -->
   <section id="features">
     <div class="wrap">
       <div class="kicker">Features</div>
@@ -357,8 +343,9 @@
         </div>
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <h3>LDAP integration</h3>
+          <h3>LDAP integration*</h3>
           <p>Plug into your existing directory service to manage VPN users with the accounts and groups you already have.</p>
+          <p class="card-note">*Available in <a href="https://pantheon.tech/products/entguard/" target="_blank" rel="noopener">enterprise versions</a> of EntGuard.</p>
         </div>
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
@@ -372,8 +359,9 @@
         </div>
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <h3>Built-in observability</h3>
+          <h3>Built-in observability*</h3>
           <p>Telemetry with Prometheus, Telegraf, and a ready-made Grafana dashboard, plus a dedicated healthcheck service that watches session validity.</p>
+          <p class="card-note">*Available in <a href="https://pantheon.tech/products/entguard/" target="_blank" rel="noopener">enterprise versions</a> of EntGuard.</p>
         </div>
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
@@ -396,7 +384,6 @@
     </div>
   </section>
 
-  <!-- ============ ARCHITECTURE ============ -->
   <section id="architecture" class="section-alt">
     <div class="wrap">
       <div class="kicker">Architecture</div>
@@ -435,7 +422,6 @@
     </div>
   </section>
 
-  <!-- ============ USE CASES ============ -->
   <section id="use-cases">
     <div class="wrap">
       <div class="kicker">Use Cases</div>
@@ -477,7 +463,6 @@
     </div>
   </section>
 
-  <!-- ============ OPEN SOURCE ============ -->
   <section id="open-source" class="section-alt">
     <div class="wrap">
       <div class="oss">
@@ -503,7 +488,6 @@
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
   <footer>
     <div class="wrap">
       <div class="footer-grid">
